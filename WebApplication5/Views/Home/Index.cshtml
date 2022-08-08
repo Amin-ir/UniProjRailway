@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<div id="formContainer">
+    <form method="get">
+        <label for="start">مبدأ</label><br>
+        <input type="text" id="start" name="start" class="stringInput"></input><br>
+        <label for="dest">مقصد</label><br>
+        <input type="text" id="dest" name="dest" class="stringInput"></input><br>
+        <div style="position:absolute;border-radius: 10px;" id="sideContainer">
+            <button class="sides" style="float: left;border-right: white;border-top-left-radius: 10px;
+                                    border-bottom-left-radius: 10px;">
+                یک طرفه
+            </button>
+            <button class="sides" style="border-top-right-radius: 10px;
+                                    border-bottom-right-radius: 10px;">
+                دوطرفه
+            </button>
+        </div><br><br>
+    </form>
+</div>
+<b>
+    <h3 style="color: #222831; text-align: center; padding-left: 10%;
+             padding-right: 10%; font-family: boldShabnam; font-size: 25px;">
+        خدمات
+    </h3>
+</b>
+<div id="srvcs">
+    <span>
+        <img src="/Resources/icons/icons8-restaurant-96.png"><br>
+        <p class="srvcTitles"><b>پذیرایی</b><br>نگران وعده غذایی نباش</p>
+    </span>
+    <span>
+        <img src="/Resources/icons/icons8-broom-96.png"><br>
+        <p class="srvcTitles"><b>بهداشت و نظافت</b><br>سفر در محیط ضدعفونی شده</p>
+    </span>
+    <span>
+        <img src="/Resources/icons/icons8-refund-96.png"><br>
+        <p class="srvcTitles"><b>ارزان</b><br>یک سفر به صرفه</p>
+    </span>
+</div>
+<hr>
+<b><p style="text-align: center; font-family: yekan; font-size: 25px;">گالری تصاویر</p></b>
+<div id="gallery">
+    <img src="/Resources/imgs/5.jpg" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 3;">
+    <img src="/Resources/imgs/3.jpg" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; grid-row-end: 4;">
+    <img src="/Resources/imgs/2.jpg" style="grid-column-start: 2; grid-column-end: 4; grid-row-start: 1; grid-row-end: 2;">
+    <img src="/Resources/imgs/1.jpg" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 4;">
+    <img src="/Resources/imgs/4.jpg" style="grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4;">
+</div>
+<hr>
+<b><h4 style="text-align: center; font-family: yekan; font-size:25px;">اخبار</h4></b>
+<div class="news">
+    <img src="/Resources/imgs/cons.png">
+    <h5>آغاز طراحی سمت کاربر وبسایت</h5>
+    <p>امروز، یکشنبه مورخ یکم خرداد 1401، فرآیند ایجاد طراحی سمت کاربر وبسایت پروژه درس پایگاه داده آغاز شد. امید است که هرچه زودتر این بخش به اتمام رسد تا به بخش مهم تر یعنی طراحی سمت سرور برسیم.</p>
+</div>
+

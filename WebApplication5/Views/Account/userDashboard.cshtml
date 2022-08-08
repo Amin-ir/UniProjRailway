@@ -1,0 +1,43 @@
+﻿@model WebApplication5.Models.DB.PASSENGER
+@{
+    ViewData["Title"] = "داشبورد کاربر";
+    Layout = "~/Views/Shared/_UserDashboardLayout.cshtml";
+}
+<form id="wrapper" method="post" asp-controller="account" asp-action="edit">
+                <div id="firstcolumn">
+                    <div id="inputWrapper">
+                        <input type="text" value=@Model.FNAME name="fname">
+                        <input type="text" value=@Model.LNAME name="lname" />
+                        <input type="text" value=@Model.FATHER_NAME name="father_name" />
+                        <input type="text" value=@Model.SX name="sx" disabled/>
+                        <input type="text" value=@Model.PASSW name="passw" />
+                        <input type="text" value=@Model.BIRTH name="birth" data-jdp>
+                        <script type="text/javascript" src="/Resources/jalalidatepicker.min.js">
+                        </script>
+                        <script>
+                                jalaliDatepicker.startWatch({
+                                    minDate: "attr",
+                                    maxDate: "attr",
+                                    container: "div"
+                                }); 
+                        </script>
+                        <input type="text" value=@Model.PHONE name="phone" disabled/>
+                        <input type="text" value=@Model.ADDRESS name="address" />
+                    </div>
+                </div>
+                <div id="secondcolumn">
+                    <div id="labelWrapper">
+                        <label for="fname">نام</label>
+                        <label for="lname">نام خانوادگی</label>
+                        <label for="father_name">نام پدر</label>
+                        <label for="sx">جنسیت</label>
+                        <label for="passw">رمز عبور</label>
+                        <label for="birth">تاریخ تولد</label>
+                        <label for="phone">شماره همراه</label>
+                        <label for="address">آدرس</label>
+                    </div>
+                </div>
+                    <div id="secondrow">
+                        <button id="edit" type="submit" >ثبت ویرایش</button>
+                    </div>
+            </form>

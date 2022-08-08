@@ -1,0 +1,331 @@
+body{
+    background-color: #c7c7c7;
+    overflow-x: hidden;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    #icon_container{
+        background-color: #393E46; 
+        display:flex; 
+        justify-content: center;
+    }
+    nav{
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    text-align: center;
+    }
+    nav a{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222831;
+        color:white;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition-duration: 0.8s;
+        font-family: samim;
+        width: 100%;
+        text-decoration:none;
+    }
+    #formContainer{
+        display:flex;
+        background-image: url('/Resources/imgs/lowResolution_trainBackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    form{
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background-color:darkslateblue;
+        margin: 10%;
+        padding: 10%;
+        color:white;
+        opacity: 0.9;
+        font-family: shabnam;
+    }
+    .news{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        border:#393E46;
+        border-style:solid;
+        border-width: 1px;
+        padding:30px;
+    }
+    .news img{
+        width:80%;
+        border-style: groove;
+        border-color: white;
+    
+    }
+    .news p{
+        font-family: shabnam;
+        font-size: 15px;
+        text-align: center;
+    }
+    .news h5,h2{
+        font-family: samim;
+        font-size:20px;
+        text-align:center;
+        margin:5px;
+    }
+    .stringInput{
+        padding: 5% 10% 5% 10%;
+        margin: 5% -20% 5% -20%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    #srvcs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        color: #222831;
+    }
+    #gallery{
+        column-gap: 1px;
+        row-gap: 1px;
+        display:grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        padding: auto 20% auto 20%;
+        margin:5%;
+        border-width: 5px;
+        border-style: groove;
+        border-color: white;
+    }
+    #gallery img{
+        width:100%;
+        height:100%;
+        transition-duration: 0.5s;
+    }
+    #gallery img:hover{
+        transform: scale(125%);
+    }
+    .sides{
+        border-color:white;
+        text-align: center;
+        font-family: samim;
+        background-color:royalblue;
+        color:white;
+        border-style: double;
+        padding:8px;
+    }
+    #sideContainer{
+        margin-left: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    a img{
+        width: 6%;
+        height: 6%;
+        margin: 1% 1% 2% 1%;
+    }
+}
+@media screen and (min-width:769px){
+    #icon_container{
+        background-color: #393E46; 
+        display:flex; 
+        justify-content: right;
+    }
+    nav{
+    display: flex;
+    width: 100%; 
+    flex-direction: row-reverse;
+    text-align: center;
+    }
+    nav a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #222831;
+     color: white;
+     padding-top: 2%;
+     padding-bottom: 2%;
+     transition-duration: 0.8s;
+     font-family: samim;
+     width: 100%;
+     cursor: pointer;
+     text-decoration: none;
+    }
+    nav img{
+        display: none;
+    }
+    #firstOnLeft{
+        margin-left: 100px;
+    }
+    #firstOnRight{
+        margin-right: 100px;
+    }
+    #formContainer{
+        display:flex;
+        background-image: url('/Resources/imgs/lowResolution_trainBackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: left;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 20%;
+    }
+    form{
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background-color:darkslateblue;
+        margin: 7%;
+        padding: 5%;
+        color:white;
+        opacity: 0.9;
+        font-family: shabnam;
+    }
+    .news{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        border:#393E46;
+        border-style:solid;
+        border-width: 1px;
+        padding:30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .news img{
+        width:60%;
+        height:60%;
+        border-style: groove;
+        border-color: white;
+    
+    }
+    .news p{
+        font-family: shabnam;
+        font-size: 15px;
+        text-align: center;
+    }
+    .news h5{
+        font-family: samim;
+        font-size:20px;
+        text-align:center;
+        margin:5px;
+    }
+    .stringInput{
+        padding: 5% 10% 5% 10%;
+        margin: 5% -20% 5% -20%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    #srvcs{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content:space-evenly;
+        color: #222831;
+    }
+    #srvcs span{
+        width: 100%;
+        height: 100%;
+    }
+    #gallery{
+        column-gap: 1px;
+        row-gap: 1px;
+        display:grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        padding: auto 20% auto 20%;
+        margin:5% auto 5% auto;
+        border-width: 5px;
+        border-style: groove;
+        border-color: white;
+        width:60%;
+        height:60%;
+    }
+    #gallery img{
+        width:100%;
+        height:100%;
+        transition-duration: 0.5s;
+    }
+    #gallery img:hover{
+        transform: scale(125%);
+    }
+    .sides{
+        border-color:white;
+        text-align: center;
+        font-family: samim;
+        background-color:royalblue;
+        color:white;
+        border-style: double;
+        padding:8px;
+    }
+    #sideContainer{
+        margin-left: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    a img{
+        width: 6%;
+        height: 6%;
+        margin: 1% 1% 2% 1%;
+    }
+    #signinform{
+        width: 20%;
+        height:15%;
+    }
+
+}    
+
+nav a:hover{
+    background-color: #00ADB5;
+}
+
+.sides:hover{
+    background-color: black;
+    transition-duration: 0.9s;
+}
+*::selection{
+    user-select: none;
+}
+.srvcTitles{
+    font-family: parastoo;
+}
+address{
+    padding-top:5%;
+    padding-bottom:5%;
+    text-align: center;
+    font-family: sahel;
+    background-color: #222831;
+    color:white;
+}
+@font-face {
+    font-family: yekan;
+    src: url('/Resources/font/yekan-font/Yekan.woff');
+}
+@font-face {
+    font-family: samim ;
+    src: url('/Resources/font/samim-font-v2.0.1/Samim.woff');
+}
+@font-face {
+    font-family: parastoo;
+    src: url('/Resources/font/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff');
+}
+@font-face {
+    font-family: shabnam;
+    src: url('/Resources/font/shabnam-font-v2.4.0/Shabnam-Light.woff');
+}
+@font-face{
+    font-family: sahel-bold;
+    src:url('/Resources/font/sahel-font-v1.0.0-alpha14/Sahel-Bold.woff');
+}
+@font-face{
+    font-family: boldShabnam;
+    src:url('/Resources/font/shabnam-font-v2.4.0/Shabnam-Bold.woff')
+}
+@font-face {
+    font-family: sahel;
+    src:url('/Resources/font/sahel-font-v1.0.0-alpha14/Sahel.woff')
+}

@@ -1,0 +1,639 @@
+@media screen and (min-width:320px) and (max-width:768px){
+
+    nav{
+        position:sticky;
+        bottom:2%;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        background-color: #06283D;
+        color:white;
+        text-align: center;
+        border-radius: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    nav a:hover{
+        transition-duration: 0.5s;
+        background-color: #A6B1E1;    
+    }
+    a p{
+    display: none;
+    }
+    nav img{
+        height: 50%;
+        width: 50%;
+        position: relative;
+        margin: 20% auto 20% auto;
+    }
+    body{
+        background-color: #DFF6FF;
+        overflow-x: hidden;
+    }
+    nav a{
+        border-radius: 30px;
+        position:relative;
+        transition: 0.5s;
+    }
+    #sidebar{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        top:0;
+        left: 100%;
+        background-color: #222831;
+        z-index: 1;
+        transition: 0.5s;
+        
+    }
+    #sidebar a{
+        text-align: center;
+        color: white;
+        transition-duration: 0.5s;
+        display: block;
+        float: right;
+        position: relative;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: samim;
+    }
+    #sidebar a:hover{
+        background-color: #DCD6F7;
+    }
+    #menu {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+        display: inline-block;
+        background-color: #222831;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-left:86%;
+    }
+    #usermenuflex{
+        top:2%;  
+        display:grid;
+        position:sticky;
+        grid-template-columns: 26% auto auto auto auto auto;
+    }
+    #user{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+        display:inline-block;
+        background-color:#1363DF;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    #cross{
+        height: 28px;
+        width: 28px;
+        margin: 10px auto auto 10px;
+        cursor: pointer;
+    }
+    #user:hover{
+        background-color: #47B5FF;
+    }
+    #user img {
+        padding:10px 10px 10px 10px;
+        height:28px;
+        width:28px;
+        margin:10px 5px 10px 5px;
+    }
+    #arrow{
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    #arrow:hover{
+        transition: 0.3s;
+        transform: rotate(90deg);
+    }
+    @font-face {
+        font-family: yekan;
+        src: url('../font/yekan-font/Yekan.woff');
+    }
+    @font-face {
+        font-family: samim ;
+        src: url('../font/samim-font-v2.0.1/Samim.woff');
+    }
+    @font-face {
+        font-family: parastoo;
+        src: url('../font/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff');
+    }
+    @font-face {
+        font-family: shabnam;
+        src: url('../font/shabnam-font-v2.4.0/Shabnam-Light.woff');
+    }
+    @font-face{
+        font-family: sahel-bold;
+        src:url('../font/sahel-font-v1.0.0-alpha14/Sahel-Bold.woff');
+    }
+    @font-face{
+        font-family: boldShabnam;
+        src:url('../font/shabnam-font-v2.4.0/Shabnam-Bold.woff')
+    }
+    @font-face {
+        font-family: sahel;
+        src:url('../font/sahel-font-v1.0.0-alpha14/Sahel.woff')
+    }
+    #profilebadge{
+        background-color: rgb(218, 218, 218);
+        color: black;
+        display:grid;
+        border-radius: 8px;
+    }
+    #profilebadge *{
+        margin: 10px;
+        font-family: yekan;
+    }
+    #pcontainer{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    #p1{
+        margin-bottom: 0px;
+        padding-top: 10%;
+    }
+    #profilebadge img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-color: black;
+        border-style: solid;
+        border-radius: 50px;
+        padding:10px
+    }
+    #profilebadge button{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 10px;
+        background-color: red;
+        color: white; 
+        border-color: white;
+        transition: 0.3s;
+    }
+    #profilebadge button:hover{
+        transition: 0.3s;
+        background-color: rgb(95, 0, 0);
+    }
+    #badge{
+        display:none;
+    }
+    .title{
+        text-align: right;
+        font-family: yekan;
+        font-size: 26px;
+    }
+    table{
+        border-style: solid;
+        border-collapse: collapse;
+        font-family: sahel;
+        background-color:peachpuff;
+    }
+    td{
+        background-color: white;    
+    }
+    p{
+        font-family: shabnam;
+        font-size: 15px;
+        color:#06283D;
+        text-align: center;
+    }
+    button{
+        position: relative;
+        background-color: #1363DF;
+        color:white;
+        border-radius: 15px;
+        padding:8px 28px 8px 28px;
+        left:55%;
+        font-family: sahel;
+        left: 40%;
+        transition: 0.5s;
+    }
+    button:hover{
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    #wrapper {
+        display: grid;
+        text-align: right;
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 0% 50%;
+        border-radius: 8px;
+        border-color: rgb(153, 152, 152);
+    }
+
+        #wrapper * {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+    #inputWrapper {
+        display: flex;
+        flex-direction: column;
+        font-family: shabnam;
+    }
+
+    #labelWrapper {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-family: sahel;
+    }
+
+    #inputWrapper * {
+        text-align: right;
+        font-family: shabnam;
+    }
+
+    #edit {
+        background-color: rgb(13, 13, 82);
+        color: white;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-family: yekan;
+        border-color: white;
+        transition-duration: 0.5s;
+    }
+
+        #edit:hover {
+            background-color: rgb(89, 89, 170);
+            transition-duration: 0.5s;
+        }
+
+    #firstcolumn {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #secondcolumn {
+        grid-column-start: 2;
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #secondrow {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    }
+@media screen and (min-width:769px) {
+    nav {
+        position: sticky;
+        bottom: 2%;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        background-color: #06283D;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+        nav a:hover {
+            transition-duration: 0.5s;
+            background-color: #A6B1E1;
+        }
+
+    a p {
+        display: none;
+    }
+
+    nav img {
+        height: 50%;
+        width: 50%;
+        position: relative;
+        margin: 20% auto 20% auto;
+    }
+
+    body {
+        background-color: #DFF6FF;
+        overflow-x: hidden;
+    }
+
+    nav a {
+        border-radius: 30px;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    #sidebar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 100%;
+        background-color: #222831;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+        #sidebar a {
+            text-align: center;
+            color: white;
+            transition-duration: 0.5s;
+            display: block;
+            float: right;
+            position: relative;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: samim;
+        }
+
+            #sidebar a:hover {
+                background-color: #DCD6F7;
+            }
+
+    #menu {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: inline-block;
+        background-color: #222831;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-left: 130%;
+    }
+
+    #usermenuflex {
+        top: 2%;
+        display: grid;
+        position: sticky;
+        grid-template-columns: 12% auto auto auto auto auto;
+    }
+
+    #user {
+        width:135px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: inline-block;
+        background-color: #1363DF;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+
+    #cross {
+        height: 28px;
+        width: 28px;
+        margin: 10px auto auto 10px;
+        cursor: pointer;
+    }
+
+    #user:hover {
+        background-color: #47B5FF;
+    }
+
+    #user img {
+        padding: 10px 10px 10px 10px;
+        height: 28px;
+        width: 28px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    #arrow {
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+        #arrow:hover {
+            transition-duration: 0.5s;
+            border-style: solid;
+            border-color: white;
+            transform: rotate(90deg);
+        }
+
+    @font-face {
+        font-family: yekan;
+        src: url('../font/yekan-font/Yekan.woff');
+    }
+
+    @font-face {
+        font-family: samim;
+        src: url('../font/samim-font-v2.0.1/Samim.woff');
+    }
+
+    @font-face {
+        font-family: parastoo;
+        src: url('../font/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff');
+    }
+
+    @font-face {
+        font-family: shabnam;
+        src: url('../font/shabnam-font-v2.4.0/Shabnam-Light.woff');
+    }
+
+    @font-face {
+        font-family: sahel-bold;
+        src: url('../font/sahel-font-v1.0.0-alpha14/Sahel-Bold.woff');
+    }
+
+    @font-face {
+        font-family: boldShabnam;
+        src: url('../font/shabnam-font-v2.4.0/Shabnam-Bold.woff')
+    }
+
+    @font-face {
+        font-family: sahel;
+        src: url('../font/sahel-font-v1.0.0-alpha14/Sahel.woff')
+    }
+
+    #profilebadge {
+        background-color: rgb(218, 218, 218);
+        color: black;
+        display: grid;
+        border-radius: 8px;
+    }
+
+        #profilebadge * {
+            margin: 10px;
+            font-family: yekan;
+        }
+
+    #pcontainer {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #p1 {
+        margin-bottom: 0px;
+        padding-top: 10%;
+    }
+
+    #profilebadge img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-color: black;
+        border-style: solid;
+        border-radius: 50px;
+        padding: 10px
+    }
+
+    #profilebadge button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border-color: white;
+        transition: 0.3s;
+    }
+
+        #profilebadge button:hover {
+            transition: 0.3s;
+            background-color: rgb(95, 0, 0);
+        }
+
+    #badge {
+        display: none;
+    }
+
+    .title {
+        text-align: right;
+        font-family: yekan;
+        font-size: 26px;
+    }
+
+    table {
+        border-style: solid;
+        border-collapse: collapse;
+        font-family: sahel;
+        background-color: peachpuff;
+    }
+
+    td {
+        background-color: white;
+    }
+
+    p {
+        font-family: shabnam;
+        font-size: 15px;
+        color: #06283D;
+        text-align: center;
+    }
+
+    button {
+        position: relative;
+        background-color: #1363DF;
+        color: white;
+        border-radius: 15px;
+        padding: 8px 28px 8px 28px;
+        left: 55%;
+        font-family: sahel;
+        left: 46%;
+        transition: 0.5s;
+    }
+
+        button:hover {
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+    #wrapper {
+        display: grid;
+        text-align: right;
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 0% 50%;
+        border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(197, 196, 196);
+    }
+
+        #wrapper * {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+    #inputWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #labelWrapper {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-family: sahel;
+    }
+
+    #inputWrapper * {
+        text-align: right;
+        font-family: samim;
+    }
+
+    #edit {
+        background-color: rgb(13, 13, 82);
+        color: white;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-family: yekan;
+        border-color: white;
+        transition-duration: 0.5s;
+    }
+
+        #edit:hover {
+            background-color: rgb(89, 89, 170);
+            transition-duration: 0.5s;
+        }
+
+    #firstcolumn {
+        position: relative;
+        left: 40%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-right: 0%;
+    }
+
+    #secondcolumn {
+        margin-left: 0%;
+        grid-column-start: 2;
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #secondrow {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+   
+    }

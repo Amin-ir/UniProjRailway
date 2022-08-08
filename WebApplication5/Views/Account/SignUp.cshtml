@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "ثبت نام";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<style>
+    .container {
+        background-image: url('../imgs/lowResolution_trainBackground.jpg');
+        background-repeat: no-repeat;
+        filter: blur(5px);
+    }
+
+    button {
+        border-radius: 25px;
+        padding: 10px 50px 10px 50px;
+        transition-duration: 0.5s;
+        background-color: #393E46;
+        color: white;
+        font-family: yekan;
+        font-size: 15px;
+        border-color: white;
+    }
+        button:hover {
+            background-color: #00ADB5;
+        }
+
+    form {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+    form input {
+        font-family:samim;
+    }
+
+    #formbckgrnd {
+        z-index: -1;
+        position: absolute;
+        filter: blur(5px);
+        width: 100%;
+        height: max-content;
+    }
+</style>
+<img id="formbckgrnd" src="~/Resources/imgs/highrespic.jpg">
+<form method="POST" id="signinform" asp-controller="Account" asp-action="SignUp">
+    <label for="fname">نام</label>
+    <input type="text" id="fname" name="fname" class="stringInput"></input>
+    <label for="lname"> نام خانوادگی</label>
+    <input type="text" id="lname" name="lname" class="stringInput"></input>
+    <label for="father_name">نام پدر</label>
+    <input type="text" id="frname" name="father_name" class="stringInput"></input>
+    <label for="idcode">تاریخ تولد</label>
+    <input type="text" id="idcode" name="birth" class="stringInput" data-jdp></input>
+    <script type="text/javascript" src="/Resources/jalalidatepicker.min.js"></script>
+                        <script>
+                                jalaliDatepicker.startWatch({
+                                    minDate: "attr",
+                                    maxDate: "attr",
+                                    container: "div"
+                                }); 
+                        </script>
+    <label for="phone">شماره تلفن </label>
+    <input type="text" id="phone" name="phone" class="stringInput"></input>
+    <label for="sx">جنسیت</label>
+    <input type="text" id="sx" name="sx" class="stringInput" list="sex" autocomplete="off"></input>
+    <label for="passw">رمز عبور</label>
+    <input type="password" id="passwd" name="passw" class="stringInput"></input>
+    <button>ثبت نام</button><br>
+    <p>حساب دارید؟<a href="/Account/SignIn" style="text-decoration:none; color:#00ADB5">اینجا</a>کلیک کنید</p>
+    <br><br>
+        <datalist id="sex">
+            <option value="مرد"></option>
+            <option value="زن"></option>
+        </datalist>
+</form>
+    </img>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <script src="../scripts/dashboard_script.js"></script>
+    <head>
+        <link rel="stylesheet" href="../stylesheets/user_dashboard_style.css">
+        <title>داشبورد | شرکت حمل و نقلی مُلک</title>
+        <!--این تگ بعد از تعیین آدرس وبسایت، ویرایش گردد-->
+        <meta charset="UTF-8">
+        <meta name="description" content="خرید بلیط قطار">
+        <meta name="keywords" content="قطار, سفر, خرید, ارزان, فوری, چارتر">
+        <meta name="author" content="Mohammad Amin Moghaddasi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="usermenuflex">
+        <div id="user"><img src="../icons/userprofile.png">
+            <img id="arrow" onclick="openbadge()" style="cursor: pointer;"src="../icons/rightarrow.png">
+        </div>
+        <img onclick="slide()" id="menu" src="../icons/icons8-menu-64.png"></img>
+        <span id = "badge" style="position: relative; right: 13%;">
+            <div id="profilebadge" style="position: absolute; z-index: 1;">
+                <div id="pcontainer"><p id="p1">نام: user</p>
+                <p id="p2">شناسه: 1</p></div>
+                <img src="../icons/userprofile.png">
+                <button style="padding: 5px 15px 5px 15px;">خروج</button>
+            </div>
+        </span>
+    </div>
+        <div id="sidebar">
+            <img id="cross" onclick="slide()" src="../icons/cross.png">
+            <br><br>
+            <a>سفرهای من</a><br>
+            <a>تراکنش ها</a><br>
+            <a>اطلاعات من</a><br>
+            <a>لیست سفر های موجود</a><br>
+            <a style="color: red;">خروج</a><br>
+        </div>
+        <p style="font-family: yekan; font-size: 25px; color:#06283D; text-align: right;">
+            :حساب کاربری من</p>
+        <p>:نام</p>
+        <p>:نام خانوادگی</p>
+        <p>:نام پدر</p>
+        <p>:جنسیت</p>
+        <p>:ایمیل</p>
+        <p>:شماره تلفن</p>
+        <p>:آدرس</p>
+        <p>:تاریخ تولد</p>
+        <button>ویرایش</button>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <nav>           
+            <a><img src="../icons/icons8-login-64.png"><p>ورود</p></a>
+            <a><img src="../icons/icons8-suitcase-64.png"><p>اطلاعات سفر</p></a>
+            <a><img src="../icons/icons8-train-64.png"><p>معرفی قطار ها</p></a>
+            <a><img src="../icons/icons8-phone-64.png"><p>تماس با ما</p></a>
+            <a><img src="../icons/icons8-information-64.png"><p>درباره ما</p></a>
+        </nav>
+    </body>
+</html>

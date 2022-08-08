@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+    <style>
+        .container{
+            background-image: url('/imgs/lowResolution_trainBackground.jpg');
+            background-repeat: no-repeat;
+            filter: blur(5px);
+        }
+        button{
+            border-radius: 25px;
+            padding: 10px 50px 10px 50px;
+            transition-duration: 0.5s;
+            background-color: #393E46;
+            color: white;
+            font-family: yekan;
+            font-size: 15px;
+            border-color: white;
+        }
+        button:hover{
+            background-color: #00ADB5;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+        #formbckgrnd{
+            z-index: -1;
+            position: absolute;
+            filter: blur(5px);
+            width: 100%;
+            height: 100%;
+        }
+        p a{
+            text-decoration: none;
+            color: #00ADB5;
+        }
+    </style>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/index_style.css">
+        <title>ورود | شرکت حمل و نقلی مُلک</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="خرید بلیط قطار">
+        <meta name="keywords" content="قطار, سفر, خرید, ارزان, فوری, چارتر">
+        <meta name="author" content="Mohammad Amin Moghaddasi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="icon_container">
+            <img src="/icons/icons8-train-96.png">
+    </div>
+    <div style="background-color: #222831;">
+    <nav>
+        <a>ورود<img src="/icons/icons8-login-64.png"></a>
+        <a>خانه<img src="/icons/icons8-home-64.png"></a>
+        <a>اطلاعات سفر<img src="/icons/icons8-suitcase-64.png"></a>
+        <a>معرفی قطار ها<img src="/icons/icons8-train-64.png"></a>
+        <a>تماس با ما<img src="/icons/icons8-phone-64.png"></a>
+        <a>درباره ما<img src="/icons/icons8-information-64.png"></a>
+</nav></div>
+    <img id="formbckgrnd" src="/Resources/imgs/desktop_train_background.jpg">
+        <form id="signinform">
+            <label for="idcode">کد ملی</label><br>
+            <input type="text" id="idcode" name="idcode" class="stringInput"></input><br>
+            <label for="passwd">رمز عبور</label><br>
+            <input type="text" id="passwd" name="passwd" class="stringInput"></input><br>
+            <button>ورود</button><br>
+            <p style="color: white;">ثبت نام نکرده اید؟ <a href="./register.html" style="color:#00ADB5 ;">اینجا</a> کلیک کنید</p>
+            <br>
+        </form>
+    </img>
+    </body>
+</html>

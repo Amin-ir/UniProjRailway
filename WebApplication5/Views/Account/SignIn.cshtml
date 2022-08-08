@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "ورود";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+<style>
+        .container{
+            background-image: url('/imgs/lowResolution_trainBackground.jpg');
+            background-repeat: no-repeat;
+            filter: blur(5px);
+        }
+        button{
+            border-radius: 25px;
+            padding: 10px 50px 10px 50px;
+            transition-duration: 0.5s;
+            background-color: #393E46;
+            color: white;
+            font-family: yekan;
+            font-size: 15px;
+            border-color: white;
+        }
+        button:hover{
+            background-color: #00ADB5;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+        #formbckgrnd{
+            z-index: -1;
+            position: absolute;
+            filter: blur(5px);
+            width: 100%;
+            height: 100%;
+        }
+        p a{
+            text-decoration: none;
+            color: #00ADB5;
+        }
+    </style>
+<img id="formbckgrnd" src="~/Resources/imgs/desktop_train_background.jpg">
+<form id="signinform" method="post" href="/account/signin">
+    <label for="phone">شماره همراه</label><br>
+    <input type="text" id="idcode" name="phone" class="stringInput"></input><br>
+    <label for="password">رمز عبور</label><br>
+    <input type="password" id="passwd" name="password" class="stringInput"></input><br>
+    <button>ورود</button><br>
+    @*<p style="color:orange;">@{@Model.message}</p>*@
+        <p style="color: white;">ثبت نام نکرده اید؟ <a href="/Account/SignUp" style="color:#00ADB5 ;">اینجا</a> کلیک کنید</p>
+        <br>
+    </form>
+        </img>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <link rel="stylesheet" href="/Resources/stylesheets/index_style.css">
+    <link rel="stylesheet" href="/Resources//jalalidatepicker.min.css"/>
+    <script src="/Resources/jquery-3.6.0.js" type="text/javascript"/></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="خرید بلیط قطار">
+    <meta name="keywords" content="قطار, سفر, خرید, ارزان, فوری, چارتر">
+    <meta name="author" content="Mohammad Amin Moghaddasi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="icon_container">
+        <img src="/Resources/icons/icons8-train-96.png" alt="trainLogo" title="train">
+    </div>
+    <div style="background-color: #222831;">
+        <nav>
+            <a id="firstOnRight" href="/Account/SignIn">ورود|ثبت نام<img src="/Resources/icons/icons8-login-64.png"></a>
+            <a href="/Home/Index">خانه<img src="/Resources/icons/icons8-home-64.png"></a>
+            <a>اطلاعات سفر<img src="/Resources/icons/icons8-suitcase-64.png"></a>
+            <a href="/Home/contact">تماس با ما<img src="/Resources/icons/icons8-phone-64.png"></a>
+            <a id="firstOnLeft" href="/Home/About">درباره ما<img src="/Resources/icons/icons8-information-64.png"></a>
+        </nav>
+    </div>
+    @RenderBody()
+    <address>
+        تماس با ما: moghaddasiamin246@gmail.com<br>
+        آدرس: قم - بلوار الغدیر - دانشگاه قم<br>
+        شماره تماس: 09107561751<br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.467056566622!2d50.8256574!3d34.6012088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59bcc793c0cdbeda!2sUniversity%20of%20Qom!5e0!3m2!1sen!2s!4v1653120952810!5m2!1sen!2s"
+                style="border:0; height: 200px; width:200px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </address>
+</body>
+</html>

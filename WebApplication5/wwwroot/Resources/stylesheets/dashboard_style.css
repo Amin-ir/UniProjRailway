@@ -1,0 +1,383 @@
+@media screen and (min-width:320px) and (max-width:768px) {
+    
+    nav{
+        position:sticky;
+        bottom:2%;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        background-color: #424874;
+        color:white;
+        text-align: center;
+        border-radius: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+    nav a:hover{
+        transition-duration: 0.5s;
+        background-color: #A6B1E1;    
+    }
+    a p{
+    display: none;
+    }
+    nav img{
+        height: 50%;
+        width: 50%;
+        position: relative;
+        margin: 20% auto 20% auto;
+    }
+    body{
+        background-color: #F4EEFF;
+        overflow-x: hidden;
+    }
+    nav a{
+        border-radius: 30px;
+        position:relative;
+        transition: 0.5s;
+    }
+    #sidebar{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        top:0;
+        left: 100%;
+        background-color: #222831;
+        z-index: 1;
+        transition: 0.5s;
+        
+    }
+    #sidebar a{
+        text-align: center;
+        color: white;
+        transition-duration: 0.5s;
+        display: block;
+        float: right;
+        position: relative;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: samim;
+    }
+    #sidebar a:hover{
+        background-color: #DCD6F7;
+    }
+    #menu {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+        display: inline-block;
+        background-color: #222831;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-left:86%;
+    }
+    #usermenuflex{
+        top:2%;  
+        display:grid;
+        position:sticky;
+        grid-template-columns: 26% auto auto auto auto auto;
+    }
+    #user{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+        display:inline-block;
+        background-color:#424874;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    #cross{
+        height: 28px;
+        width: 28px;
+        margin: 10px auto auto 10px;
+        cursor: pointer;
+    }
+    #user:hover{
+        background-color: #424874;
+    }
+    #user img {
+        padding:10px 10px 10px 10px;
+        height:28px;
+        width:28px;
+        margin:10px 5px 10px 5px;
+    }
+    #arrow{
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    #arrow:hover{
+        transition: 0.3s;
+        background-color:#beb9c7;
+        transform: rotate(90deg);
+    }
+    #profilebadge{
+        background-color: rgb(218, 218, 218);
+        color: black;
+        display:grid;
+        border-radius: 8px;
+    }
+    #profilebadge *{
+        margin: 10px;
+        font-family: yekan;
+    }
+    #pcontainer{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    #p1{
+        margin-bottom: 0px;
+        padding-top: 10%;
+    }
+    #profilebadge img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-color: black;
+        border-style: solid;
+        border-radius: 50px;
+        padding:10px
+    }
+    #profilebadge a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 10px;
+        background-color: red;
+        color: white; 
+        border-color: white;
+        transition: 0.3s;
+    }
+    #profilebadge a:hover{
+        transition: 0.3s;
+        background-color: rgb(95, 0, 0);
+    }
+    #badge{
+        display:none;
+    }
+    .title{
+        text-align: right;
+        font-family: yekan;
+        font-size: 26px;
+    }
+    table{
+        border-style: solid;
+        border-collapse: collapse;
+        font-family: sahel;
+        background-color:peachpuff;
+    }
+    td{
+        background-color: white;    
+    }
+    }
+    @media screen and (min-width:769px) {
+        nav{
+            position:sticky;
+            bottom:2%;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            background-color: #424874;
+            color:white;
+            text-align: center;
+            border-radius: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items:center;
+        }
+        nav a:hover{
+            transition-duration: 0.5s;
+            background-color: #A6B1E1;    
+        }
+        a p{
+        display: none;
+        }
+        nav img{
+            height: 50%;
+            width: 50%;
+            position: relative;
+            margin: 20% auto 20% auto;
+        }
+        body{
+            background-color: #F4EEFF;
+            overflow-x: hidden;
+        }
+        nav a{
+            border-radius: 30px;
+            position:relative;
+            transition: 0.5s;
+        }
+        #sidebar{
+            position: absolute;
+            right:0;
+            bottom: 0;
+            top:0;
+            left: 100%;
+            background-color: #222831;
+            z-index: 1;
+            transition: 0.5s;
+            
+        }
+        #sidebar a{
+            text-align: center;
+            color: white;
+            transition-duration: 0.5s;
+            display: block;
+            float: right;
+            position: relative;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: samim;
+        }
+        #sidebar a:hover{
+            background-color: #DCD6F7;
+        }
+        #menu {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start:1 ;
+            grid-row-end:2 ;
+            display: inline-block;
+            background-color: #222831;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-left:130%;
+        }
+        #usermenuflex{
+            top:2%;  
+            display:grid;
+            position:sticky;
+            grid-template-columns: 12% auto auto auto auto auto;
+        }
+        #user{
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-row-start:1 ;
+            grid-row-end:2 ;
+            display:inline-block;
+            background-color:#424874;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        #cross{
+            height: 28px;
+            width: 28px;
+            margin: 10px auto auto 10px;
+            cursor: pointer;
+        }
+        #user:hover{
+            background-color: #424874;
+        }
+        #user img {
+            padding:10px 10px 10px 10px;
+            height:28px;
+            width:28px;
+            margin:10px 5px 10px 5px;
+        }
+        #arrow{
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        #arrow:hover{
+            transition: 0.3s;
+            background-color:#beb9c7;
+            transform: rotate(90deg);
+        }
+        #profilebadge{
+            background-color: rgb(218, 218, 218);
+            color: black;
+            display:grid;
+            border-radius: 8px;
+        }
+        #profilebadge *{
+            margin: 10px;
+            font-family: yekan;
+        }
+        #pcontainer{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #p1{
+            margin-bottom: 0px;
+            padding-top: 10%;
+        }
+        #profilebadge img{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-color: black;
+            border-style: solid;
+            border-radius: 50px;
+            padding:10px
+        }
+        #profilebadge a{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border-radius: 10px;
+            background-color: red;
+            color: white; 
+            border-color: white;
+            transition: 0.3s;
+        }
+        #profilebadge a:hover{
+            transition: 0.3s;
+            background-color: rgb(95, 0, 0);
+        }
+        #badge{
+            display:none;
+        }
+        .title{
+            text-align: right;
+            font-family: yekan;
+            font-size: 26px;
+        }
+        table{
+            border-style: solid;
+            border-collapse: collapse;
+            font-family: sahel;
+            background-color:peachpuff;
+        }
+        td{
+            background-color: white;    
+        }
+    }
+    @font-face {
+        font-family: yekan;
+        src: url('/Resources/font/yekan-font/Yekan.woff');
+    }
+    @font-face {
+        font-family: samim ;
+        src: url('/Resources/font/samim-font-v2.0.1/Samim.woff');
+    }
+    @font-face {
+        font-family: parastoo;
+        src: url('/Resources/font/parastoo-font-v1.0.0-alpha5/web/Parastoo.woff');
+    }
+    @font-face {
+        font-family: shabnam;
+        src: url('/Resources/font/shabnam-font-v2.4.0/Shabnam-Light.woff');
+    }
+    @font-face{
+        font-family: sahel-bold;
+        src:url('/Resources/font/sahel-font-v1.0.0-alpha14/Sahel-Bold.woff');
+    }
+    @font-face{
+        font-family: boldShabnam;
+        src:url('/Resources/font/shabnam-font-v2.4.0/Shabnam-Bold.woff')
+    }
+    @font-face {
+        font-family: sahel;
+        src:url('/Resources/font/sahel-font-v1.0.0-alpha14/Sahel.woff')
+    }

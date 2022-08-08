@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <link rel="stylesheet" href="../stylesheets/index_style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="خرید بلیط قطار">
+    <meta name="keywords" content="قطار, سفر, خرید, ارزان, فوری, چارتر">
+    <meta name="author" content="Mohammad Amin Moghaddasi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="icon_container">
+        <img src="../icons/icons8-train-96.png" alt="trainLogo" title="train">
+    </div>
+    <div style="background-color: #222831;">
+        <nav>
+            <a id="firstOnRight">ورود<img src="../icons/icons8-login-64.png"></a>
+            <a href="/Home/Index">خانه<img src="../icons/icons8-home-64.png"></a>
+            <a>اطلاعات سفر<img src="../icons/icons8-suitcase-64.png"></a>
+            <a>معرفی قطار ها<img src="../icons/icons8-train-64.png"></a>
+            <a href="/Home/contact">تماس با ما<img src="../icons/icons8-phone-64.png"></a>
+            <a id="firstOnLeft" href="/Home/aboutUs">درباره ما<img src="../icons/icons8-information-64.png"></a>
+        </nav>
+    </div>
+    <div id="formContainer">
+        <form method="get">
+            <label for="start">مبدأ</label><br>
+            <input type="text" id="start" name="start" class="stringInput"></input><br>
+            <label for="dest">مقصد</label><br>
+            <input type="text" id="dest" name="dest" class="stringInput"></input><br>
+            <div style="position:absolute;border-radius: 10px;" id="sideContainer">
+                <button class="sides" style="float: left;border-right: white;border-top-left-radius: 10px;
+                                    border-bottom-left-radius: 10px;">
+                    یک طرفه
+                </button>
+                <button class="sides" style="border-top-right-radius: 10px;
+                                    border-bottom-right-radius: 10px;">
+                    دوطرفه
+                </button>
+            </div><br><br>
+        </form>
+    </div>
+    <b>
+        <h3 style="color: #222831; text-align: center; padding-left: 10%;
+             padding-right: 10%; font-family: boldShabnam; font-size: 25px;">
+            خدمات
+        </h3>
+    </b>
+    <div id="srvcs">
+        <span>
+            <img src="../icons/icons8-restaurant-96.png"><br>
+            <p class="srvcTitles"><b>پذیرایی</b><br>نگران وعده غذایی نباش</p>
+        </span>
+        <span>
+            <img src="../icons/icons8-broom-96.png"><br>
+            <p class="srvcTitles"><b>بهداشت و نظافت</b><br>سفر در محیط ضدعفونی شده</p>
+        </span>
+        <span>
+            <img src="../icons/icons8-refund-96.png"><br>
+            <p class="srvcTitles"><b>ارزان</b><br>یک سفر به صرفه</p>
+        </span>
+    </div>
+    <hr>
+    <b><p style="text-align: center; font-family: yekan; font-size: 25px;">گالری تصاویر</p></b>
+    <div id="gallery">
+        <img src="../imgs/5.jpg" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 3;">
+        <img src="../imgs/3.jpg" style="grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; grid-row-end: 4;">
+        <img src="../imgs/2.jpg" style="grid-column-start: 2; grid-column-end: 4; grid-row-start: 1; grid-row-end: 2;">
+        <img src="../imgs/1.jpg" style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 4;">
+        <img src="../imgs/4.jpg" style="grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4;">
+    </div>
+    <hr>
+    <b><h4 style="text-align: center; font-family: yekan; font-size:25px;">اخبار</h4></b>
+    <div class="news">
+        <img src="../imgs/cons.png">
+        <h5>آغاز طراحی سمت کاربر وبسایت</h5>
+        <p>امروز، یکشنبه مورخ یکم خرداد 1401، فرآیند ایجاد طراحی سمت کاربر وبسایت پروژه درس پایگاه داده آغاز شد. امید است که هرچه زودتر این بخش به اتمام رسد تا به بخش مهم تر یعنی طراحی سمت سرور برسیم.</p>
+    </div>    
+        <address>
+        تماس با ما: moghaddasiamin246@gmail.com<br>
+        آدرس: قم - بلوار الغدیر - دانشگاه قم<br>
+        شماره تماس: 09107561751<br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.467056566622!2d50.8256574!3d34.6012088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x59bcc793c0cdbeda!2sUniversity%20of%20Qom!5e0!3m2!1sen!2s!4v1653120952810!5m2!1sen!2s"
+                style="border:0; height: 200px; width:200px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </address>
+</body>
+</html>

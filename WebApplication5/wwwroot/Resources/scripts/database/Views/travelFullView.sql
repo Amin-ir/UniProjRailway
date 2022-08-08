@@ -1,0 +1,9 @@
+CREATE VIEW TRAVELFullView
+AS
+SELECT t.*, CITY_NAME AS destPoint,dbo.fullcap(TRAVEL_ID) AS [Full Capacity],
+	dbo.REMAINING(TRAVEL_ID) AS [Remaining Capacity] 
+	FROM (	SELECT TRAVEL.* , CITY_NAME AS startPoint FROM TRAVEL
+	JOIN CITY ON CITY_ID = START_ID
+	) AS t
+    JOIN CITY ON DEST_ID = CITY_ID
+;

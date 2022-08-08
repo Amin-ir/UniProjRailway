@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+        <script src="/Resources/scripts/dashboard_script.js"></script>
+        <link rel="stylesheet" href="/Resources/jalalidatepicker.min.css" />
+        <link rel="stylesheet" href="/Resources/stylesheets/user_dashboard_style.css"/>
+        <script src="/Resources/jquery-3.6.0.js" type="text/javascript"></script>
+        <title>داشبورد | شرکت حمل و نقلی مُلک</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="خرید بلیط قطار">
+        <meta name="keywords" content="قطار, سفر, خرید, ارزان, فوری, چارتر">
+        <meta name="author" content="Mohammad Amin Moghaddasi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            a{
+                text-decoration:none;
+            }
+            #profilebadge a{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border-radius: 10px;
+            background-color: red;
+            color: white; 
+            border-color: white;
+            transition: 0.3s;
+            text-align:center;
+        }
+        #profilebadge a:hover{
+            transition: 0.3s;
+            background-color: rgb(95, 0, 0);
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <div id="usermenuflex">
+        <div id="user"><img src="/Resources/icons/userprofile.png">
+            <img id="arrow" onclick="openbadge()" style="cursor: pointer;"src="/Resources/icons/rightarrow.png">
+        </div>
+        <img onclick="slide()" id="menu" src="/Resources/icons/icons8-menu-64.png"></img>
+        <span id = "badge" style="position: relative; right: 13%;">
+            <span id="profilebadge" style="position: absolute; z-index: 1;">
+                <span id="pcontainer"><p id="p1">نام: </p>
+                <p id="p2">شناسه: 0</p></span>
+                <img src="/Resources/icons/userprofile.png">
+                <a href="/Account/SignOff" style="padding: 5px 15px 5px 15px;">خروج</a>
+            </span>
+        </span>
+    </div>
+        <div id="sidebar">
+            <img id="cross" onclick="slide()" src="/Resources/icons/cross.png">
+            <br><br>
+            <a>تراکنش های من</a><br>
+            <a>سفر های من</a><br>
+            <a>اطلاعات سفر ها</a><br>
+            <a href="/Account/SignOff" style="color: red;">خروج</a><br>
+        </div>
+                @RenderBody()
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <nav>           
+            <a><img src="/Resources/icons/icons8-login-64.png"><p>ورود</p></a>
+            <a><img src="/Resources/icons/icons8-suitcase-64.png"><p>اطلاعات سفر</p></a>
+            <a><img src="/Resources/icons/icons8-train-64.png"><p>معرفی قطار ها</p></a>
+            <a><img src="/Resources/icons/icons8-phone-64.png"><p>تماس با ما</p></a>
+            <a><img src="/Resources/icons/icons8-information-64.png"><p>درباره ما</p></a>
+        </nav>
+    </div>
+</body>
+</html>

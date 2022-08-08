@@ -1,0 +1,143 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "RailwayDBContext",
+   "ContextNamespace": "Models.DB",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": "Models.DB",
+   "OutputContextPath": "Models\/DB",
+   "OutputPath": "Models\/DB",
+   "ProjectRootNamespace": "WebApplication5",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[CITY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MEAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MEAL_TRAVEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MODEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ORG]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PASSENGER]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[STATION]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TICKET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TRAIN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TRAVEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TRAVEL_STATION]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[fullTrainView]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[MEALTRAVEL_VIEW]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[TICKETVIEW]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[TRAVELFullView]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[TRAVELSTATION_VIEW]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[CitySearch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[MEALTRAVEL_SEARCH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StationSearch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TICKETSEARCH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TrainSearch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TravelSearch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TRAVELSTATION_MOD]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[UsersSearch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[fullcap]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[MEALPRICECAL]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[REMAINING]",
+         "ObjectType": 2
+      }
+   ],
+   "UiHint": "DESKTOP-8RPLKKL.RailwayDB",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
